@@ -1,0 +1,16 @@
+def count_nucleotides(sequence: str) -> dict:
+	"""
+	Counts the total amount of each base in a given sequence of DNA bases
+	
+	Takes any string and returns the amount of A, C, G, T in that string in that order
+	"""
+	
+	# convert to uppercase
+	upper_seq = sequence.upper()
+	
+	return {
+	'A': upper_seq.count('A'),
+	'C': upper_seq.count('C'),
+	'G': upper_seq.count('G'),
+	'T': upper_seq.count('T')
+	}
